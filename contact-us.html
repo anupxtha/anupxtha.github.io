@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio: Contact-Us</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styleheader.css">
+	<link rel="stylesheet" type="text/css" href="contact-us-page.css">
+	<link rel="stylesheet" type="text/css" href="Aboutme.css">
+	<link rel="stylesheet" type="text/css" href="experience.css">
+	<link rel="stylesheet" type="text/css" href="skills.css">
+	<link rel="stylesheet" type="text/css" href="blogs.css">
+	<link rel="stylesheet" type="text/css" href="contact-us.css">
+	<link rel="stylesheet" type="text/css" href="footer.css">
+	<link rel="stylesheet" type="text/css" href="research.css">
+</head>
+<body>
+	<!------Start Header ------>
+	<header id="fixed">
+		<div class="container">
+				<div class="row">
+					<div class="brand-name">
+						<a href="index.html" class="logo">Ap$tha</a>
+					</div>
+					<div class="navbar">
+						<ul>
+							<li><a href="index.html" class="active">Home</a></li>
+							<li><a href="aboutme.html">CV</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="Research.html">Research</a></li>
+							<li><a href="contact-us.html">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+		</div>
+	</header>
+	<!-----End Header------>
+
+	<!----Start Home ---->
+	<section class="home" id="Home">
+		<div class="container">
+			<div class="row full-screen">
+				<div class="home-content">
+					<div class="block">
+						
+						<h1>Contact-Us</h1>
+						<h6>6 January, 2020</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!----End Home---->
+
+		<!----Start Contact Us--->
+		<section class="contact-us" id="Contact">
+			<div class="container">
+				<div class="row">
+					<div class="section-title">
+						<h1>Get In Touch</h1>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="contact-form">
+						<form  method="" action="" name="stud_form" onsubmit="return validate()">
+						<div class="row">
+							<div class="text">
+								<h2>Drop Us a line</h2>
+								<p>We are here to answer any question you may have</p>
+							</div>
+						</div>
+
+						<div class="row space-between">
+							<div class="col-6">
+								<input type="text" class="form-control" name="name" placeholder="Name">
+							</div>
+							<div class="col-6">
+								<input type="text" class="form-control" name="email" placeholder="Email">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12">
+								<textarea class="form-control" name="textarea" placeholder="Your Message"></textarea>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="button text-right">
+								<input type="submit" value="submit">
+							</div>
+						</div>
+					</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	<!----End Contact-Us---->
+
+
+	<!-----Start Footer---->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="logo">
+						<a href="#Home">@nup-$tha</a>
+					</div>
+					<div class="social">
+						<a href="https://www.facebook.com/anup.shrestha.77715" target="_blank"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://www.instagram.com/anup_xtha/" target="_blank"><i class="fab fa-instagram"></i></a>
+						<a href="https://www.linkedin.com/learning/me?u=57118729" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+						<a href="https://www.youtube.com/channel/UCpKRofyulicm7T8sqkYu4_w" target="_blank"><i class="fab fa-youtube"></i></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	<!-----End Footer---->
+
+
+
+	<!-----Start CopyRight----->
+		<section class="copyright">
+			<div class="container">
+				<p>&copy; 2020 copyright all right reserved</p>
+			</div>
+		</section>
+	<!-----End CopyRight---->
+
+
+	<script type="text/javascript">
+		var fixed = document.getElementById('fixed');
+		window.onscroll = function(){
+			if (window.pageYOffset >100) {
+				fixed.style.background = "#021E36";
+			}
+			else{
+				fixed.style.background = "transparent";
+			}
+		}
+
+	</script>
+
+	</script>
+
+	<script type="text/javascript">
+		//Start Form Validation
+		function validate(){
+			var name = document.stud_form.name;
+			var email = document.stud_form.email;
+			var textarea = document.stud_form.textarea;
+
+			if(name.value.length <= 0) {
+				alert("Empty fields found. Name is required.");
+				name.focus();
+				return false;
+			}
+
+			if(email.value.length <= 0) {
+				alert("Empty fields found. Email is required.");
+				email.focus();
+				return false;
+			}
+
+			if(textarea.value.length <= 0) {
+				alert("Empty fields found. Message is required.");
+				textarea.focus();
+				return false;
+			}
+
+			else{
+				alert("Thank you for your feedback.")
+			}
+		}
+	</script>
+
+</body>
+</html>
